@@ -13,7 +13,7 @@
 <body>
 <title>Ellune Concept Store</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="A concept online store for Ellune, a fictional fashion label: satin after dark, best shaper basics, summer swim and the Cold Season set. Designed and built by Haitham Eldesouky.">
+<meta name="description" content="A concept online store for Ellune, a fictional fashion label: satin after dark, best shaper basics, summer linen and the Cold Season set. Designed and built by Haitham Eldesouky.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Jost:wght@400;500;600;700&display=swap">
 <style>
 /* Layout: full-bleed bands (photo, wine, porcelain) alternating with a 4-up product grid on the studio-backdrop grey of Ellune's own shoots; one sticky header; drawers and sheets for bag, menu, search and zoom. */
@@ -730,7 +730,7 @@ th{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
     <div class="foot-grid">
       <div>
         <span class="logo" role="img" aria-label="Ellune"></span>
-        <p class="about">Satin after dark, best shaper basics, summer swim and the Cold Season set. Made in Cairo.</p>
+        <p class="about">Satin after dark, best shaper basics, summer linen and the Cold Season set. Made in Cairo.</p>
         <div class="social">
           <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Ellune on Instagram"><svg class="i" aria-hidden="true"><use href="#i-ig"/></svg></a>
           <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Message Ellune on Instagram"><svg class="i" aria-hidden="true"><use href="#i-dm"/></svg></a>
@@ -807,7 +807,7 @@ th{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
   <div class="wrap search-bar">
     <svg class="i" aria-hidden="true"><use href="#i-search"/></svg>
     <label for="q" class="sr-only">Search products</label>
-    <input id="q" type="search" placeholder="Search satin, bikini, bodysuit" autocomplete="off" enterkeyhint="search">
+    <input id="q" type="search" placeholder="Search satin, kaftan, linen" autocomplete="off" enterkeyhint="search">
     <button class="icon-btn" data-act="close-layer" aria-label="Close search"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg></button>
   </div>
   <div class="wrap search-res" id="searchRes" aria-live="polite"></div>
@@ -850,7 +850,7 @@ var SECTIONS = ["collections","lookbook","reviews","perks"];
 var COLLECTIONS = [
   {id:"cold", name:"Cold Season", eyebrow:"New drop", img:"cold-set-1", blurb:"Striped knits made for slow, cosy days."},
   {id:"after-dark", name:"After Dark", eyebrow:"Satin & lace", img:"wine-set-2", blurb:"Wine satin, black sequins and lace that catches the light. For the nights you plan and the ones you don’t."},
-  {id:"summer", name:"Summer ’26", eyebrow:"Swim & resort", img:"butter-bikini-1", blurb:"Butter yellow, mermaid shimmer, mesh mood. Made for long beach days."},
+  {id:"summer", name:"Summer ’26", eyebrow:"Linen & resort", img:"butter-shirt-1", blurb:"Butter yellow, airy kimonos, easy maxis. Made for long beach days."},
   {id:"essentials", name:"Best Shaper Basics", eyebrow:"Everyday", img:"bodysuit-black-1", blurb:"Our best shaper tops and bodysuits. Two cuts, five colours, zero effort."},
   {id:"kaftans", name:"Kaftans", eyebrow:"Evenings", img:"kaftan-brown-1", blurb:"Flowing kaftans for iftars, suhoors and every gathering in between."}
 ];
@@ -861,50 +861,50 @@ var P = [
    colors:[{n:"Ivory / Navy", hex:"#efe9df", imgs:["cold-set-1","cold-set-4","cold-set-2","cold-set-3","cold-set-5"]}],
    desc:"A relaxed striped knit in ivory and navy, made to layer and lounge in. Cosy enough for the cold, hot enough for the feed.",
    details:["Two-piece set: knit top and wide-leg pants","Soft brushed knit with ribbed stripe trims","Ribbed cuffs and hem","Relaxed, oversized fit. Size down for a closer look"]},
-  {id:"wine-satin-lace-set", name:"Wine Satin Slit Gown", col:"after-dark", price:1450, badge:["Restocked","hot"], stock:4, soldOut:["XS"], added:13,
+  {id:"wine-satin-gown", name:"Wine Satin Gown", col:"after-dark", price:1450, badge:["Restocked","hot"], stock:4, soldOut:["XS"], added:13,
    colors:[{n:"Wine", hex:"#6d1424", imgs:["wine-set-1","wine-set-2","wine-set-3"]}],
-   desc:"A plunging satin gown in deep wine with a high leg slit. Your favourite gown is back, in very limited pieces.",
-   details:["Heavy satin with a soft sheen","V neckline, adjustable straps","High leg slit","Floor length"]},
-  {id:"black-sequin-babydoll", name:"Black Sequin Gown", col:"after-dark", price:1250, badge:["Hot","hot"], added:12,
-   colors:[{n:"Black", hex:"#151112", imgs:["sequin-dress-1","sequin-dress-2","sequin-dress-3"]}],
-   desc:"Head-to-toe sequins, a plunging neckline and a column cut. The hottest black dress for your summer vacation and every night after.",
-   details:["All-over sequins","Deep V neckline","Floor-length column cut","Fully lined"]},
+   desc:"A flowing gown in deep wine with long sleeves and a soft, floor-length drape. Your favourite gown is back, in very limited pieces.",
+   details:["Satin-finish crepe","Long sleeves, round neck","Floor length, relaxed fit","Fully lined"]},
+  {id:"midnight-sequin-gown", name:"Midnight Sequin Gown", col:"after-dark", price:1250, badge:["Hot","hot"], added:12,
+   colors:[{n:"Midnight", hex:"#1d3a40", imgs:["sequin-dress-1","sequin-dress-2","sequin-dress-3"]}],
+   desc:"Sequins from top to toe, long sleeves and a high neckline. Made to catch the light at every evening out.",
+   details:["All-over sequins","Long sleeves, high neck","Floor-length cut","Fully lined"]},
   {id:"wine-satin-maxi", name:"Wine Satin Maxi Dress", col:"after-dark", price:1350, added:11,
    colors:[{n:"Wine", hex:"#6d1424", imgs:["duo-1","trio-1","night-2"]}],
-   desc:"Liquid satin that skims every curve, cut to the floor. Burgundy never goes out of style.",
-   details:["Heavy satin with a soft drape","Floor length","Adjustable straps","Pairs with gold jewellery"]},
-  {id:"yellow-mermaid-bikini", name:"Yellow Mermaid Bikini", col:"summer", price:950, badge:["Limited",""], added:10,
-   colors:[{n:"Butter yellow", hex:"#f1d36a", imgs:["butter-bikini-1","butter-bikini-2","butter-bikini-3","butter-bikini-4","mermaid-1"]}],
-   desc:"A shimmering triangle top and tie-side bottoms in butter yellow, the colour of the season. Made for long beach days.",
-   details:["Shimmer triangle top with adjustable halter ties","Tie-side bottoms","Lined, quick-dry fabric","Sold as a set"]},
-  {id:"mesh-mood-pants", name:"Lace Beach Cover-Up", col:"summer", price:850, added:9,
+   desc:"Liquid satin with long sleeves, cut loose to the floor. Burgundy never goes out of style.",
+   details:["Heavy satin with a soft drape","Floor length","Long sleeves","Pairs with gold jewellery"]},
+  {id:"butter-oversized-shirt", name:"Butter Oversized Shirt", col:"summer", price:950, badge:["Limited",""], added:10,
+   colors:[{n:"Butter yellow", hex:"#f1d36a", imgs:["butter-shirt-1","butter-shirt-2","butter-shirt-3","butter-shirt-4","mermaid-1"]}],
+   desc:"A roomy shirt in butter yellow, the colour of the season. Belt it, layer it, wear it everywhere. Made for long beach days.",
+   details:["Light cotton-linen blend","Long sleeves, dropped shoulders","Relaxed, longline fit","Matching fabric belt"]},
+  {id:"ivory-beach-kimono", name:"Ivory Beach Kimono", col:"summer", price:850, added:9,
    colors:[{n:"Ivory", hex:"#f3eee4", imgs:["mesh-1","mermaid-2"]}],
-   desc:"A long open-knit lace cover-up in ivory. Throw it over your bikini and keep the day going.",
-   details:["Open crochet-style lace","Long, relaxed fit","Fringed hem","Beach and pool cover-up"]},
-  {id:"golden-tan-bikini", name:"Golden Tan Bikini", col:"summer", price:950, added:8,
-   colors:[{n:"Chocolate / Gold", hex:"#5a3a2a", imgs:["tan-bikini-1"]}],
-   desc:"Golden tan meets chocolate vibes. A crochet-look triangle bikini made for sun-kissed skin.",
-   details:["Printed triangle top","Tie-side bottoms","Lined","Sold as a set"]},
-  {id:"crochet-halter-set", name:"Crochet Halter Set", col:"summer", price:1200, added:3,
-   colors:[{n:"Ivory / Black", hex:"#efe9df", imgs:["crochet-1","crochet-2"]}],
-   desc:"A cropped crochet halter with wavy black stripes and a matching maxi skirt. Easy resort energy.",
-   details:["Crochet halter top with wavy stripes","High-rise crochet maxi skirt","Lined bust","Sold as a set"]},
+   desc:"A long, airy kimono in ivory. Throw it over anything and keep the day going.",
+   details:["Lightweight cotton gauze","Long, relaxed fit","Wide sleeves","Beach to dinner"]},
+  {id:"chocolate-resort-maxi", name:"Chocolate Resort Maxi", col:"summer", price:950, added:8,
+   colors:[{n:"Chocolate", hex:"#5a3a2a", imgs:["choc-maxi-1"]}],
+   desc:"Golden hour meets chocolate tones. A long-sleeve jersey maxi that moves with you.",
+   details:["Soft stretch jersey","Long sleeves","Floor length","Fully lined"]},
+  {id:"cardigan-maxi-set", name:"Cardigan & Maxi Skirt Set", col:"summer", price:1200, added:3,
+   colors:[{n:"Black", hex:"#151112", imgs:["crochet-1","crochet-2"]}],
+   desc:"A fitted knit cardigan over a flowing maxi skirt. Easy, put-together, done. Easy resort energy.",
+   details:["Button-front knit cardigan","High-rise maxi skirt","Lined skirt","Sold as a set"]},
   {id:"best-shaper-bodysuit", name:"Best Shaper Bodysuit", col:"essentials", price:750, added:7,
    colors:[
      {n:"Black", hex:"#151112", imgs:["bodysuit-black-1"]},
      {n:"Baby Pink", hex:"#f1a8c4", imgs:["bodysuit-pink-1"]}],
    desc:"Our best shaper bodysuit: sculpting, second-skin and smooth under everything. The one you’ll reach for every time.",
    details:["Double-layer shaping fabric","Long sleeves, scoop neckline","Snap closure","Holds its shape wash after wash"]},
-  {id:"burgundy-bodysuit", name:"Rust Long-Sleeve Bodysuit", col:"essentials", price:650, badge:["Last pieces","low"], stock:2, soldOut:["XS","XL"], added:6,
-   colors:[{n:"Rust", hex:"#b4472f", imgs:["bodysuit-burgundy-1","burgundy-top-1"]}],
-   desc:"Only a few pieces left. A sculpted long-sleeve bodysuit in a warm rust shade.",
-   details:["Shaping stretch fabric","Long sleeves, scoop neck","Snap closure"]},
+  {id:"burgundy-bodysuit", name:"Burgundy Turtleneck Bodysuit", col:"essentials", price:650, badge:["Last pieces","low"], stock:2, soldOut:["XS","XL"], added:6,
+   colors:[{n:"Burgundy", hex:"#6d1424", imgs:["bodysuit-burgundy-1","burgundy-top-1"]}],
+   desc:"Only a few pieces left. A sculpted turtleneck bodysuit in the shade that never goes out of style.",
+   details:["Shaping stretch fabric","Long sleeves, turtleneck","Snap closure"]},
   {id:"best-shaper-top", name:"Best Shaper Basic Top", col:"essentials", price:450, added:5,
    colors:[
      {n:"Baby Pink", hex:"#f1a8c4", imgs:["basic-pink-1","pink-top-1"]},
      {n:"Black", hex:"#151112", imgs:["basic-black-1"]}],
-   desc:"The basic that isn’t basic. Long sleeves, a sculpted fit and a cropped length that loves high-waisted pants.",
-   details:["Shaping stretch fabric","Long sleeves","Cropped length","Scoop neck"]},
+   desc:"The basic that isn’t basic. Long sleeves, a sculpted fit and a length that tucks neatly into high-waisted pants.",
+   details:["Shaping stretch fabric","Long sleeves","Hip length","Scoop neck"]},
   {id:"chic-basic-tank", name:"Chic Basic Tank", col:"essentials", price:400, added:4,
    colors:[
      {n:"Slate", hex:"#3e4650", imgs:["tank-forest-1"]},
@@ -935,17 +935,17 @@ var REVIEWS = [
 var UGC = ["ugc-cold-2","burgundy-top-2","ugc-cold-1","ugc-tanks","ugc-cold-4","ugc-knit","ugc-cold-3","kaftan-black-2"];
 var LOOKS = [
   {img:"trio-1", q:"One season. Endless moments.", to:"#shop-after-dark", pos:"center 30%"},
-  {img:"night-2", q:"Arrive like you mean it.", to:"#p-wine-satin-lace-set", pos:"center 30%"},
-  {img:"mermaid-1", q:"Pack light. Shine bright.", to:"#p-yellow-mermaid-bikini", pos:"center 40%"},
-  {img:"sequin-dress-3", q:"Summer starts with Ellune.", to:"#p-black-sequin-babydoll", pos:"center 60%"},
+  {img:"night-2", q:"Arrive like you mean it.", to:"#p-wine-satin-gown", pos:"center 30%"},
+  {img:"mermaid-1", q:"Pack light. Shine bright.", to:"#p-butter-oversized-shirt", pos:"center 40%"},
+  {img:"sequin-dress-3", q:"Summer starts with Ellune.", to:"#p-midnight-sequin-gown", pos:"center 60%"},
   {img:"cold-set-5", q:"Soft knits for slow days.", to:"#p-cold-season-set", pos:"center 30%"},
-  {img:"crochet-2", q:"Resort mode: on.", to:"#p-crochet-halter-set", pos:"center 30%"},
+  {img:"crochet-2", q:"Resort mode: on.", to:"#p-cardigan-maxi-set", pos:"center 30%"},
   {img:"atelier-1", q:"Details 👀", to:"#shop", pos:"center 40%"}
 ];
 var HERO = [
   {eyebrow:"Cold Season · New drop", h:"Soft knits for <em>slow</em> days.", p:"Striped knits made for slow, cosy days. The Cold Season set is here.", a:["cold-set-4","cold-set-1"], pos:["center 30%","center 18%"], cta:["Shop Cold Season","#shop-cold"], cta2:["Shop all","#shop"]},
-  {eyebrow:"After Dark · Restocked", h:"Your favourite <em>wine satin</em> gown is back.", p:"Very limited pieces. Satin, a deep V and a slit you’ll want to show off.", a:["wine-set-2","wine-set-1"], pos:["center 35%","center 30%"], cta:["Shop After Dark","#shop-after-dark"], cta2:["See the gown","#p-wine-satin-lace-set"]},
-  {eyebrow:"Summer ’26", h:"Sun, sea and <em>butter yellow.</em>", p:"Butter yellow, mermaid shimmer and mesh mood. Made for long beach days.", a:["butter-bikini-1","mermaid-2"], pos:["center 30%","center 40%"], cta:["Shop Summer","#shop-summer"], cta2:["Shop all","#shop"]}
+  {eyebrow:"After Dark · Restocked", h:"Your favourite <em>wine satin</em> gown is back.", p:"Very limited pieces. Satin, long sleeves and a drape you’ll want to show off.", a:["wine-set-2","wine-set-1"], pos:["center 35%","center 30%"], cta:["Shop After Dark","#shop-after-dark"], cta2:["See the gown","#p-wine-satin-gown"]},
+  {eyebrow:"Summer ’26", h:"Sun, sea and <em>butter yellow.</em>", p:"Butter yellow, airy kimonos and easy maxis. Made for long beach days.", a:["butter-shirt-1","mermaid-2"], pos:["center 30%","center 40%"], cta:["Shop Summer","#shop-summer"], cta2:["Shop all","#shop"]}
 ];
 
 /* ================= HELPERS ================= */
@@ -1108,7 +1108,7 @@ function sizeGuide(){
 }
 var INFO = {
   delivery:'<h2 id="modalTitle">Delivery</h2><ul class="checks"><li>Delivery all over Egypt in 2 to 5 working days.</li><li>Cairo and Giza EGP 70. Alexandria EGP 80. Other governorates EGP 95.</li><li>Free delivery on orders over EGP '+nf.format(CONFIG.freeShip)+'.</li><li>Cash on delivery or InstaPay. We confirm every order by phone.</li></ul>',
-  returns:'<h2 id="modalTitle">Exchanges</h2><ul class="checks"><li>Exchange within 14 days for a different size or piece.</li><li>Pieces must be unworn with tags attached. Swimwear needs its hygiene liner intact.</li><li>Start an exchange by sending us your order number on Instagram.</li></ul>'
+  returns:'<h2 id="modalTitle">Exchanges</h2><ul class="checks"><li>Exchange within 14 days for a different size or piece.</li><li>Pieces must be unworn with tags attached. Tags must stay attached.</li><li>Start an exchange by sending us your order number on Instagram.</li></ul>'
 };
 
 /* ================= ZOOM ================= */
@@ -1187,14 +1187,14 @@ function searchProducts(q){
 function renderSearch(){
   var q = $("#q").value, box = $("#searchRes");
   if(!q.trim()){
-    box.innerHTML = '<p class="hint">Popular right now</p><div class="pop">'+["satin","bikini","bodysuit","kaftan","cold season","pink"].map(function(t){ return '<button class="chip" data-act="search-term" data-t="'+t+'">'+t+'</button>'; }).join("")+'</div>';
+    box.innerHTML = '<p class="hint">Popular right now</p><div class="pop">'+["satin","linen","bodysuit","kaftan","cold season","pink"].map(function(t){ return '<button class="chip" data-act="search-term" data-t="'+t+'">'+t+'</button>'; }).join("")+'</div>';
     return;
   }
   var r = searchProducts(q);
   box.innerHTML = r.length
     ? '<p class="hint">'+r.length+' '+plural(r.length)+' for “'+esc(q.trim())+'” <button class="link" data-act="search-all">See all</button></p>'
       +'<div class="sr-grid">'+r.slice(0,8).map(function(p){ return '<a class="sr-item" href="#p-'+p.id+'">'+pic(p.colors[0].imgs[0], "", "160px", {pos:"center 22%"})+'<b>'+esc(p.name)+'</b><span>'+money(p.price)+'</span></a>'; }).join("")+'</div>'
-    : '<p class="hint">Nothing matches “'+esc(q.trim())+'”. Try satin, bikini or bodysuit.</p>';
+    : '<p class="hint">Nothing matches “'+esc(q.trim())+'”. Try satin, kaftan or linen.</p>';
 }
 function searchAll(){
   var v = $("#q").value.trim(); if(!v) return;
@@ -1285,7 +1285,7 @@ function card(p){
 
 /* ================= HOME ================= */
 function renderHome(){
-  var fresh = ["cold-season-set","wine-satin-lace-set","black-sequin-babydoll","best-shaper-bodysuit","yellow-mermaid-bikini","burgundy-bodysuit","hazelnut-kaftan","best-shaper-top"].map(byId);
+  var fresh = ["cold-season-set","wine-satin-gown","midnight-sequin-gown","best-shaper-bodysuit","butter-oversized-shirt","burgundy-bodysuit","hazelnut-kaftan","best-shaper-top"].map(byId);
   var words = ["Made in Cairo","After dark","Best shaper basics","Cold Season","Summer ’26","Shine bright"];
   var half = words.concat(words).map(function(w){ return "<span>"+w+"</span>"; }).join("");
   app.innerHTML =
@@ -1407,7 +1407,7 @@ function renderShop(r){
   else if(state.sort==="price-desc") list.sort(function(a,b){ return b.price-a.price; });
   else if(state.sort==="new") list.sort(function(a,b){ return b.added-a.added; });
   var heading = term ? "Results for “"+esc(term)+"”" : col ? esc(col.name) : "Shop all";
-  var lede = term ? list.length+" "+plural(list.length)+" found. <a class=\"link\" href=\"#shop\">Clear search</a>" : col ? esc(col.blurb) : "Every piece, every drop. Satin after dark, best shaper basics, summer swim and the Cold Season set.";
+  var lede = term ? list.length+" "+plural(list.length)+" found. <a class=\"link\" href=\"#shop\">Clear search</a>" : col ? esc(col.blurb) : "Every piece, every drop. Satin after dark, best shaper basics, summer linen and the Cold Season set.";
   var allOn = !col && !term;
   app.innerHTML =
   '<div class="wrap page-head"><nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span>'+(col||term ? '<a href="#shop">Shop</a><span aria-hidden="true">/</span><span aria-current="page">'+(term?"Search":esc(col.name))+'</span>' : '<span aria-current="page">Shop</span>')+'</nav>'
@@ -1698,7 +1698,7 @@ function renderProposal(){
   +'<section class="sec tight"><div class="wrap prop-cols"><div>'
   +'<h2>What already works in this demo</h2><ul class="checks">'
   +'<li><span><a href="#shop">Shop by collection</a>, with filters, sorting and search</span></li>'
-  +'<li><span><a href="#p-wine-satin-lace-set">Product pages</a> with colours, sizes, photo zoom and “only 4 left” alerts</span></li>'
+  +'<li><span><a href="#p-wine-satin-gown">Product pages</a> with colours, sizes, photo zoom and “only 4 left” alerts</span></li>'
   +'<li><span>Bag, wishlist and a free-delivery progress bar</span></li>'
   +'<li><span>Checkout made for Egypt: governorates, delivery fees, mobile number check, cash on delivery and InstaPay</span></li>'
   +'<li><span>Promo codes for your post-and-save offer</span></li>'
@@ -1745,7 +1745,7 @@ function renderCaseStudy(){
   +'<section class="sec tight"><div class="wrap prop-cols"><div>'
   +'<h2>What works in the demo</h2><ul class="checks">'
   +'<li><span><a href="#shop">Shop by collection</a>, with filters, sorting and search</span></li>'
-  +'<li><span><a href="#p-wine-satin-lace-set">Product pages</a> with colours, sizes, photo zoom and “only 4 left” alerts</span></li>'
+  +'<li><span><a href="#p-wine-satin-gown">Product pages</a> with colours, sizes, photo zoom and “only 4 left” alerts</span></li>'
   +'<li><span>Bag, wishlist and a free-delivery progress bar</span></li>'
   +'<li><span>A full checkout and order confirmation</span></li>'
   +'<li><span>A light look and an after-dark look that follows the phone’s setting</span></li>'
