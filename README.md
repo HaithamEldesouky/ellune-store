@@ -2,7 +2,9 @@
 
 A complete online store for **Ellune**, a fictional women's fashion label from Cairo. It's designed and built as a portfolio project by Haitham Eldesouky.
 
-**Live demo:** _add the GitHub Pages link here_
+**Live demo:** https://haithameldesouky.github.io/ellune-store/
+
+**Shopify:** the same design has also been built as a real Shopify store for a client (private, so it can't be shown here). This repo is the plain HTML/CSS/JS version. I can set up your store on Shopify with a design like this: Arabic/RTL, cash on delivery, local payments and shipping.
 
 ![Ellune concept store on desktop and phone](assets/cover.jpg)
 
